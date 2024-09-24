@@ -1,0 +1,176 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header {
+  display: flex;
+  gap: 40px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.grouping-options,
+.sorting-options {
+  display: flex;
+  align-items: center;
+}
+
+select {
+  margin-left: 10px;
+}
+
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.column {
+  padding: 15px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.column h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 4px 10px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+.column-headers {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  justify-content: space-between;
+}
+
+.left-main, .right-main {
+  gap: 12px;
+  display: flex;
+  align-items: baseline;
+  /* align-items: center; */
+}
+
+.ticket-number {
+  font-size: 11px;
+  color: #b9adad;
+  text-align: left;
+}
+
+.svgg {
+  display: flex;
+  font-size: 11px;
+  gap: 3px;
+}
+
+.used-svg {
+  width: 15px;
+  height: auto;
+}
+
+.para-tag {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 11px;
+}
+
+/* Media Queries for Responsive Layout */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 5px;
+  }
+
+  .kanban-board {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .column {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .column h2 {
+    font-size: 1.2em;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
+
+  .card h3 {
+    font-size: 1em;
+  }
+
+  .column-headers, .para-tag {
+    font-size: 9px;
+  }
+
+  .left-main, .right-main {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .used-svg {
+    width: 12px;
+  }
+
+  .ticket-number {
+    font-size: 10px;
+  }
+}
